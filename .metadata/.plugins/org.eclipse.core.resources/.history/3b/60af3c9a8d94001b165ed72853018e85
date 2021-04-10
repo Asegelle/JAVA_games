@@ -1,0 +1,30 @@
+package fr.ibformation.exos.bonus.bataille.navale.bo;
+
+public class Boats {
+
+	
+	
+	// déclaration des variables
+	public static String [] player1Boat1 = new String [5];
+	public static String [] player1Boat2 = new String [4];
+	public static String [] player1Boat3 = new String [4];
+	public static String [] player1Boat4 = new String [3];
+	public static String [] player1Boat5 = new String [2];
+	public static String [] IABoat1 = new String [5];
+	public static String [] IABoat2 = new String [4];
+	public static String [] IABoat3 = new String [4];
+	public static String [] IABoat4 = new String [3];
+	public static String [] IABoat5 = new String [2];
+	
+	
+	// constucteurs
+	
+	
+	
+	
+	
+	
+	//méthodes
+	
+	
+}

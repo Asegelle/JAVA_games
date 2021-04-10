@@ -1,0 +1,47 @@
+package fr.ibformation.poo.villes.exos.bo;
+
+public class Monument {
+
+	// déclaration des variables
+	private String name;
+	private String buildYear;
+
+	
+	// constructors
+public Monument (String name, String buildYear) {
+	this.name = name;
+	this.buildYear = buildYear;
+}
+	
+	// méthodes
+	
+	
+
+
+
+
+@Override
+public String toString() {
+	return "Monument [name=" + name + ", buildYear=" + buildYear + "]";
+}	
+	
+	// -------------------- getters / setters -------------------------------
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getBuildYear() {
+		return buildYear;
+	}
+	public void setBuildYear(String buildYear) {
+		this.buildYear = buildYear;
+	}
+	
+	
+	
+	
+}

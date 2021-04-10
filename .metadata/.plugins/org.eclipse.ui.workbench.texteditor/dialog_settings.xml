@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="P1"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="P1"/>
+			<item value="IA"/>
+			<item value="au tour"/>
+			<item value="reset"/>
+			<item value="returnTC"/>
+			<item value="grid"/>
+			<item value="if (grid["/>
+			<item value="empty"/>
+			<item value="Alive"/>
+			<item value="Start"/>
+			<item value="p1"/>
+			<item value="J1"/>
+			<item value="player"/>
+			<item value="err"/>
+			<item value="returnedIsHorizontal"/>
+		</list>
+		<list key="replacehistory">
+			<item value="IA"/>
+			<item value="P1"/>
+			<item value="gridP1"/>
+			<item value="Dead"/>
+			<item value="End"/>
+			<item value="out"/>
+			<item value="end"/>
+			<item value="equalsIgnoreCase"/>
+			<item value="ORD"/>
+			<item value="ABS"/>
+			<item value="y"/>
+			<item value="&amp;&amp;"/>
+			<item value="||"/>
+			<item value="J"/>
+			<item value="I"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1329"/>
+		<item key="DIALOG_Y_ORIGIN" value="437"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

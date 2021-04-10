@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Manipulation_Variables_exo3&apos;" deleteContents="true" description="Delete resource &apos;Manipulation_Variables_exo3&apos;" element1="/Manipulation_Variables_exo3" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1616530879513"/>&#x0A;<refactoring comment="Delete resource &apos;Manipulation_Variables_Exo3&apos;" deleteContents="false" description="Delete resource &apos;Manipulation_Variables_Exo3&apos;" element1="/Manipulation_Variables_Exo3" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1616530984607"/>
+</session>

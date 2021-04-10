@@ -1,0 +1,30 @@
+package fr.ibformation.poo.exos;
+
+import bo.ExoAvion;
+
+public class LauncherExoAvion {
+
+	public static void main(String[] args) {
+
+/*
+		•Exercice Avion : Fabriquer un Avion qui a comme caractéristique :
+				•Un numeroSerie qui ne contient que des chiffres
+				•Une compagnie
+				•Un nombre de place maximum dans l'avion.
+				•Tester la création d'une instance d’Avion dans un launcher
+*/	
+		
+	
+		
+		ExoAvion plane1;
+		plane1 = new ExoAvion(); 
+		plane1.SerieNumber = 125348;
+		plane1.company = "AlexAirways";
+		plane1.planePlaces = 84;
+		
+		System.out.println(plane1.planeInfos());
+		
+		
+	}
+
+}

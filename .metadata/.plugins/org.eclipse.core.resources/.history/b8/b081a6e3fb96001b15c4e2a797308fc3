@@ -1,0 +1,123 @@
+package fr.ibformation.poo.villes.exos.bo;
+
+import fr.ibformation.poo.villes.exos.enums.Categories;
+
+public class Ville2 {
+
+	// déclaration des variables
+	private String name;
+	private String country;
+	private int nbrCitizen;
+	private String category;
+
+	private static final int NBR_CITIZEN_FIRST_CATEGORY = 1000;
+	private static final int NBR_CITIZEN_SECOND_CATEGORY = 10000;
+	private static final int NBR_CITIZEN_THIRD_CATEGORY = 100000;
+
+	
+	// constructors
+	public Ville2 () {
+		this.name = "default";
+		this.country = "default";
+		this.nbrCitizen = 0;
+	}
+
+	public Ville2 (String name, String country, int nbrCitizen) {
+		this.name = name;
+		this.country = country;
+		this.nbrCitizen = nbrCitizen;
+	}
+
+
+
+	// -------------------------------------------- methodes-------------------------------------------------
+	// methode pour renvoyer détails de la ville
+	public String description () {
+		String citydetails = 
+				this.name +", "+
+				this.country+", "+
+				this.nbrCitizen+" habitants, categorie : "+
+				this.getCategory();
+
+		return citydetails;
+	}
+
+	public String sizeCategory () {
+		if (this.nbrCitizen <NBR_CITIZEN_FIRST_CATEGORY) {
+			return  "A";
+		}
+		else if (this.nbrCitizen <NBR_CITIZEN_SECOND_CATEGORY) {
+			return "B";
+		}
+		else if (this.nbrCitizen <NBR_CITIZEN_THIRD_CATEGORY) {
+			return  "C";
+		}
+		else  {
+			return  "D";
+		}
+	}
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Ville2 [name=" + name + ", country=" + country + ", nbrCitizen=" + nbrCitizen + "]";
+	}
+
+	
+	
+	// --------------------------------------------- Getters / Setters ------------------------------------
+
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public int getNbrCitizen() {
+		return nbrCitizen;
+	}
+
+	public void setNbrCitizen(int nbrCitizen) {
+		this.nbrCitizen = nbrCitizen;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public static int getNbrCitizenFirstCategory() {
+		return NBR_CITIZEN_FIRST_CATEGORY;
+	}
+
+	public static int getNbrCitizenSecondCategory() {
+		return NBR_CITIZEN_SECOND_CATEGORY;
+	}
+
+	public static int getNbrCitizenThirdCategory() {
+		return NBR_CITIZEN_THIRD_CATEGORY;
+	}
+
+
+
+
+
+
+
+}

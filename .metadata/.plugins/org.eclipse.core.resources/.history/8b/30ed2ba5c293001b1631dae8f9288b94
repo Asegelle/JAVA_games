@@ -1,0 +1,90 @@
+package fr.ibformation.poo.villes.exos.bo;
+
+public class ExoVilles {
+
+	// déclaration des variables
+	private String cityName;
+	private String country;
+	private int population;
+	private String category;
+	
+	
+	
+
+
+	// déclaration des méthodes
+	public String cityName() {
+		return cityName;
+	}
+	
+	public String category () {
+	if (this.population <= 1000) {
+		this.category=("A");
+	}
+	else if ((this.population > 1000) && (this.population <= 10000)) {
+		this.category=("B");
+	}
+	else if ((this.population > 10000) && (this.population <= 100000)) {
+		this.category=("C");
+	}
+	else if ((this.population > 100000)) {
+		this.category=("D");
+	}
+	return this.category;
+	}
+	
+	
+	
+	
+	// -------------------- getters / setters -------------------------------
+	
+	public String getCityName() {
+		return cityName;
+	}
+
+
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+
+
+	public String getCountry() {
+		return country;
+	}
+
+
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+
+	public int getPopulation() {
+		return population;
+	}
+
+
+
+	public void setPopulation(int population) {
+		this.population = population;
+	}
+
+
+
+	public String getCategory() {
+		return category;
+	}
+
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+	
+	
+}

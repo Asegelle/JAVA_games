@@ -1,0 +1,24 @@
+package fr.ibformation.exos.bonus.bataille.navale.bo;
+
+public class Boats {
+
+	
+	
+	// déclaration des variables
+	public static String [][] Boat = new String [10][10];
+
+	
+	
+	// constucteurs
+//	public Boats () 
+	
+	
+	
+	
+	
+	//méthodes
+	public String[][] gridBoat () {
+		return Boat;
+	}
+	
+}

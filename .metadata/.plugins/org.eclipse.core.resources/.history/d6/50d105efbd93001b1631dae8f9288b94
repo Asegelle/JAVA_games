@@ -1,0 +1,18 @@
+package fr.ibformation.poo.villes.exos.bo;
+
+public class ExoVilles {
+
+	// déclaration des variables
+	private String cityName;
+	private String country;
+	private int population;
+	
+	
+	
+	// déclaration des méthodes
+	public String cityName() {
+		return cityName;
+	}
+	
+	
+}

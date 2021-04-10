@@ -1,0 +1,37 @@
+package fr.ibformation.poo.villes.exos.launcher;
+
+public class LauncherExoVilles {
+
+	public static void main(String[] args) {
+
+/*
+Exercice Villes :
+•Création d'un objet Ville
+	•nom String)
+	•pays (String
+	•nombre d'habitants (entier)
+
+•Créer 3 instances de villes
+	•Honolulu, Quiberon, New York
+
+•Afficher les 3 villes
+
+•Système de catégories par rapport au nombre
+d'habitants
+	•A < 1000
+	•1000 < B < 10 000
+	•10 000 < C < 100 000
+	•100 000 > D
+
+•Créer une méthode pour comparer 2 objets ville par rapport au nombre d'habitants
+•Créer une méthode qui permet de dire si deux villes ont le même nom
+•Ajouter à la ville une variable monuments qui est un tableau de monuments
+•Chaque monument a un nom et une année de construction
+•2 villes sont égales si elles ont le même nom et le même monument
+•Calcul du nombre de villes créées
+*/
+		
+		
+	}
+
+}

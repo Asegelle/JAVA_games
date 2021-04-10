@@ -1,0 +1,19 @@
+package fr.ibformation.poo.exos;
+
+public class LauncherExoAvion {
+
+	public static void main(String[] args) {
+
+/*
+		•Exercice Avion : Fabriquer un Avion qui a comme caractéristique :
+				•Un numeroSerie qui ne contient que des chiffres
+				•Une compagnie
+				•Un nombre de place maximum dans l'avion.
+				•Tester la création d'une instance d’Avion dans un launcher
+*/	
+		
+		
+		
+	}
+
+}

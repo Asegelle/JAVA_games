@@ -1,0 +1,141 @@
+package fr.ibformation.exos.fonctions;
+
+public class LauncherExo2 {
+
+	// --------------------------------------------------------------------------------------------------------
+	// --------------------- fonction Names --------------------------------------
+	// --------------------------------------------------------------------------------------------------------
+
+	public static String[] Names(String player1,String player2,String player3,String player4,String player5) {
+		String[]players=new String[5];
+		players[0] = player1;
+		players[1] = player2;
+		players[2] = player3;
+		players[3] = player4;
+		players[4] = player5;
+		System.out.println("player1 : "+players[0]+
+				"\nplayer2 : "+players[1]+
+				"\nplayer3 : "+players[2]+
+				"\nplayer4 : "+players[3]+
+				"\nplayer5 : "+players[4]);
+		return players;
+	}
+
+	// --------------------------------------------------------------------------------------------------------
+	// --------------------- fonction Ranking -----------------------------------------------------------------
+	// --------------------------------------------------------------------------------------------------------
+
+	public static void Ranking (String table,String player1,String player2,String player3,String player4,String player5) {
+		System.out.println("Classement "+table+" : ");
+		String[]ranking=new String[5];
+		ranking[0] = player1;
+		ranking[1] = player2;
+		ranking[2] = player3;
+		ranking[3] = player4;
+		ranking[4] = player5;
+		System.out.println("1er : "+ranking[0]+
+				"\n2eme : "+ranking[1]+
+				"\n3eme : "+ranking[2]+
+				"\n4eme : "+ranking[3]+
+				"\n5eme : "+ranking[4]);
+//		return ranking;
+	}
+	
+	
+
+	// --------------------------------------------------------------------------------------------------------
+	// --------------------- fonction println pour affichage des variables ------------------------------------
+	// --------------------------------------------------------------------------------------------------------
+
+	public static void NamesRanking(String [] ranking) {
+		System.out.println(ranking);
+	}
+
+	// --------------------------------------------------------------------------------------------------------
+	// --------------------- fonction reRanking pour reclasser ------------------------------------------------
+	// --------------------------------------------------------------------------------------------------------
+/*
+	public static String[] racers(String racer1, String racer2,String racer3,String racer4,String racer5){
+		raceRanking[0] = raceRanking[1];
+		raceRanking[1] = raceRanking[2];
+		raceRanking[2] = raceRanking[3];
+		raceRanking[3] = raceRanking[4];
+		raceRanking[4] = raceRanking[5];
+	}
+
+
+*/
+
+
+	public static void main(String[] args) {
+		/* •Exercice 2 : Une course a eu lieu. Un algorithme permet de faire la chose suivante :
+								•Saisir les 5 premiers de la course dans un tableau 
+								•Afficher le commentaire d'arrivée grâce à ce tableau
+								•Horreur, le premier a triché, il est éliminé. Vous devez mettre le classement à jour		*/
+
+		// étape 1 : déclaration des variables
+			String[] raceRanking = new String[6];
+					// étape 2 : attribution des variables dans un tableau
+		raceRanking[0] = "Erwan";
+		raceRanking[1] = "Alex";
+		raceRanking[2] = "Nezha";
+		raceRanking[3] = "Romain";
+		raceRanking[4] = "Renaud";
+		raceRanking[5] = "Yousra";	
+		//	String[] raceRanking = new String[5];
+		Ranking ("initial", "Erwan","Alex","Nezha","Romain","Renaud");
+		// étape 3 : affichage du tableau
+		//System.out.println("Voici le classement du TOP 5 à l'arrivée de la course :		"+raceRanking[0]+"; "+raceRanking[1]+"; "+raceRanking[2]+"; "+raceRanking[3]+"; "+raceRanking[4]);
+		//	NamesRanking (raceRanking);
+/*
+		NamesRanking ("initial","Erwan","Alex","Nezha","Romain","Renaud");
+		// étape 4 : prise en compte du tricheur
+		raceRanking[0] = raceRanking[1];
+		raceRanking[1] = raceRanking[2];
+		raceRanking[2] = raceRanking[3];
+		raceRanking[3] = raceRanking[4];
+		raceRanking[4] = raceRanking[5];
+		// étape finale : affichage du tableau après correction
+		//System.out.println("Voici le nouveau classement du TOP 5 à l'arrivée de la course :	"+raceRanking[0]+"; "+raceRanking[1]+"; "+raceRanking[2]+"; "+raceRanking[3]+"; "+raceRanking[4]);
+		System.out.println("actualisation du classement : ");
+		NamesRanking (raceRanking);
+*/
+	}
+
+}
+
+
+/*
+  	------------------------------------------------------------------------------------------------------------
+	------------------------------------------- Exo initial ----------------------------------------------------
+	------------------------------------------------------------------------------------------------------------
+ */
+// étape 1 : déclaration des variables
+/*	String[] raceRanking = new String[6];
+					// étape 2 : attribution des variables dans un tableau
+		raceRanking[0] = "Erwan";
+		raceRanking[1] = "Alex";
+		raceRanking[2] = "Nezha";
+		raceRanking[3] = "Romain";
+		raceRanking[4] = "Renaud";
+		raceRanking[5] = "Yousra";	
+		String[] raceRanking = new String[]{"Erwan","Alex","Nezha","Romain","Renaud","Yousra"};
+					// étape 3 : affichage du tableau
+		System.out.println("Voici le classement du TOP 5 à l'arrivée de la course :		"+raceRanking[0]+"; "+raceRanking[1]+"; "+raceRanking[2]+"; "+raceRanking[3]+"; "+raceRanking[4]);
+					// étape 4 : prise en compte du tricheur
+		raceRanking[0] = raceRanking[1];
+		raceRanking[1] = raceRanking[2];
+		raceRanking[2] = raceRanking[3];
+		raceRanking[3] = raceRanking[4];
+		raceRanking[4] = raceRanking[5];
+					// étape finale : affichage du tableau après correction
+		System.out.println("Voici le nouveau classement du TOP 5 à l'arrivée de la course :	"+raceRanking[0]+"; "+raceRanking[1]+"; "+raceRanking[2]+"; "+raceRanking[3]+"; "+raceRanking[4]);
+
+	}
+
+}		
+	------------------------------------------------------------------------------------------------------------
+	------------------------------------------- Exo initial ----------------------------------------------------
+	------------------------------------------------------------------------------------------------------------
+
+ */

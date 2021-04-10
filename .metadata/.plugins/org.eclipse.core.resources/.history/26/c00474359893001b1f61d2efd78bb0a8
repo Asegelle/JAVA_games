@@ -1,0 +1,36 @@
+package bo;
+
+public class ExoAvion {
+
+/*
+	•Exercice Avion : Fabriquer un Avion qui a comme caractéristique :
+			•Un numeroSerie qui ne contient que des chiffres
+			•Une compagnie
+			•Un nombre de place maximum dans l'avion.
+			•Tester la création d'une instance d’Avion dans un launcher
+*/	
+	
+	
+	// déclaration des variables
+	
+	public int SerieNumber;
+	public String company;
+	public int planePlaces;
+	
+	
+	// Constructeurs
+	public ExoAvion() {
+		SerieNumber = 0000;
+		company = "inconnue";
+		planePlaces = 00;
+	}
+	
+	// déclaration des méthodes
+	
+	public String planeInfos (int plane) {
+		return ("Informationq sur l'avion "+plane+" :\nNuméro de Série : "+SerieNumber +"\nCompagnie aérienne : "+company+"\nNombre de places max : "+planePlaces+"\n");
+	}
+	
+	
+	
+}

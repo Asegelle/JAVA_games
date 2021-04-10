@@ -1,0 +1,30 @@
+package fr.ibformation.exceptions.debug.exos;
+
+public class LauncherExo1 {
+
+	public static void main(String[] args) {
+		// Exercice 1 : Détecter où se situe l'erreur avec le debug
+
+		int a, b, c, d, e;
+
+		a = 1;
+		b = 3;
+		c = 5;
+		d = 7;
+		e = 2;
+
+		int firstCalculation = a + b;
+		int secondCalculation = d - c - e;
+
+		try {
+			int finalCalculation = firstCalculation / secondCalculation;
+			System.out.println("test");
+			System.out.println(finalCalculation);
+		}
+		catch (ArithmeticException g) {
+			g.printStackTrace();
+			System.out.println("Il y eu une erreur !");
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+package fr.ibformation.todolist.bo;
+
+public class Courses {
+
+
+	// déclaration des variables
+	private String name;
+	private int quantity;
+
+
+	// constructors
+
+
+
+
+	// methodes
+
+	public String description() {
+		String description = this.name + " " + this.quantity + " ";
+		return description;
+		
+	}
+
+
+
+
+}

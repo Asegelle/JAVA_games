@@ -1,0 +1,137 @@
+package fr.ibformation.poo.villes.exos.bo;
+
+/**
+ * Entity BO villes
+ *
+ */
+public class Ville {
+
+	// déclaration des variables
+	private String cityName;
+	private String country;
+	/**
+	 * Count citizen for the all city and neighborhood
+	 */
+	private int population;
+	private String category;
+	private Monuments monument;
+	private String monumentDate;
+
+
+	// Constructeur(s)
+	/**
+	 * Constructor for instanciate Villes Objet
+	 * @param cityName
+	 * @param country
+	 * @param population
+	 */
+	public Ville(String cityName,String country,int population) {
+		this.cityName = cityName;
+		this.country = country;
+		this.population = population;
+
+	}
+
+
+	// déclaration des méthodes
+	
+	public String description () {
+		return this.cityName+" "+this.country+" "+this.population;
+	}
+	
+	
+	
+	public String category (String cityName) {
+		if (this.population <= 1000) {
+			this.category=(cityName+" : catégorie A : moins de 1.000 habitants");
+		}
+		else if ((this.population > 1000) && (this.population <= 10000)) {
+			this.category=(cityName+" : catégorie B : entre 1.000 et 10.000 habitants");
+		}
+		else if ((this.population > 10000) && (this.population <= 100000)) {
+			this.category=(cityName+" : catégorie C : entre 10.000 et 100.000 habitants");
+		}
+		else if ((this.population > 100000)) {
+			this.category=(cityName+" : catégorie D : plus de 100.000 habitants");
+		}
+		return this.category;
+	}
+
+
+	/*	public String populationComparison () {
+
+	}*/
+
+
+	// -------------------- getters / setters -------------------------------
+
+	public String getCityName() {
+		return cityName;
+	}
+
+
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+
+
+	public String getCountry() {
+		return country;
+	}
+
+
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+
+	public int getPopulation() {
+		return population;
+	}
+
+
+
+	public void setPopulation(int population) {
+		this.population = population;
+	}
+
+
+
+	public String getCategory() {
+		return category;
+	}
+
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+	public String getMonumentName() {
+		return monumentName;
+	}
+
+
+	public void setMonumentName(String monumentName) {
+		this.monumentName = monumentName;
+	}
+
+
+	public String getMonumentDate() {
+		return monumentDate;
+	}
+
+
+	public void setMonumentDate(String monumentDate) {
+		this.monumentDate = monumentDate;
+	}
+
+
+
+
+}

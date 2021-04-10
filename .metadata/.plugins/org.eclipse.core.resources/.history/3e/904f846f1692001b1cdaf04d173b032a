@@ -1,0 +1,163 @@
+package fr.ibformation.exos.bonus;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class LauncherChifoumi {
+
+public static final String COUP1="la Pierre",
+							COUP2="la Feuille",
+							COUP3="les Ciseaux";
+	
+
+	//---------------------------------------------------------------------------------------------------------
+	// --------------------- fonction ChoicePFC pour choix Pierre/feuille/ciseaux -----------------------------
+	//---------------------------------------------------------------------------------------------------------
+	public static void ChoicePFC(int input, String player) {
+		if (input<1 || input>3) {
+			System.out.println("erreur de saisie (le chiffre doit être compris entre 1 et 3)");
+		}
+		else if (input==1) {
+			System.out.println(player+" choisi : "+COUP1);	
+		}
+		else if (input==2) {
+			System.out.println(player+" choisi : "+COUP2);
+		}
+		else if (input==3) {
+			System.out.println(player+" choisi : "+COUP3);
+		}
+		else
+			System.out.println(player+" erreur de saisie");
+
+	}	
+	//---------------------------------------------------------------------------------------------------------
+	// --------------------- fonction Counters pour afficher résultats ----------------------------------------
+	//---------------------------------------------------------------------------------------------------------
+	public static void Counters(int player1, int player2) {
+		System.out.println("points :\n joueur : "+player1+" ; ordinateur : "+player2);
+	}
+	//---------------------------------------------------------------------------------------------------------
+	// --------------------- fonction EndLoop pour sortir de la boucle (implique Fonction Counters) -----------
+	//---------------------------------------------------------------------------------------------------------
+	public static boolean EndLoop(int player1, int player2) {
+		Counters(player1,player2);
+		boolean isVictory= false;
+		if (player1==5 || player1==5) {
+			isVictory = true;
+		}
+		return isVictory;
+	}
+	//---------------------------------------------------------------------------------------------------------
+
+
+
+	public static void main(String[] args) {
+		/* •Chifoumi
+				Le jeu de Chifoumi s'appelle aussi Caillou Ciseaux Papier. Le joueur va choisir soit
+				un caillou, soit des ciseaux, soit un papier à l'aide d'un menu. Le joueur affronte le
+				système. On donne un nombre de points à atteindre au début du programme (3 ou
+				5 par exemple) et le premier joueur qui a atteint ce nombre de points a gagné.	*/
+		// étape : déclaration des variables pierre, feuille, ciseau
+		// étape : attribution d'une valeur aux variables
+		boolean retry = true;
+		Scanner scanner = new Scanner (System.in);
+		int iniHumanCounter =0;
+		int iniComputerCounter=0;
+		boolean valueReturned = false;
+		System.out.println("Bienvenue dans le jeu du Chifoumi ! \n\n Le jeu de Chifoumi s'appelle également Pierre / Feuille / Ciseau. \n Vous allez devoir choisir entre Pierre / Feuille / Ciseau à l'aide d'un menu. \n Puis vous affronterez l'ordinateur, et le premier d'entre vous qui remporte 5 manches a gagné. !");
+		do {
+			// étape : questionner l'utilisateur sur son choix entre pierre feuille ciseau
+			do  {
+				System.out.println("\n choisissez l'un des 3 choix et tapez le chiffre associé : \n Pierre\t : 1 \n Feuille : 2 \n Ciseau\t : 3" );
+				int input = scanner.nextInt();
+				ChoicePFC(input, "vous avez");
+				// étape : random pour selectionner un pierre feuille ciseau par le systeme
+				Random r = new Random();
+				int numberIA = r.nextInt((3-1)+1)+1;
+				ChoicePFC(numberIA, "l'ordinateur a");
+
+				// comparaison utilisateur / systeme
+				if ((numberIA==input) || (numberIA==input) || (numberIA==input)) {
+					// affichage du résultat
+					System.out.println("égalité !");
+					// attribution d'un point à celui qui gagne - ou pas de point si égal
+					// affichage du score après chaque tour
+					Counters(iniHumanCounter, iniComputerCounter);
+				}
+				else if (numberIA==1 && input==2) {
+					System.out.println(COUP1+" perd contre "+COUP2+" !");
+					iniHumanCounter++;
+					valueReturned = EndLoop(iniHumanCounter, iniComputerCounter);
+					
+				}
+				else if (numberIA==1 && input==3) {
+					System.out.println("la "+COUP1+" gagne contre les "+COUP3+" !");
+					iniComputerCounter++;
+					valueReturned = EndLoop(iniHumanCounter, iniComputerCounter);
+
+				}
+				else if (numberIA==2 && input==1) {
+					System.out.println("la "+COUP2+" gagne contre la "+COUP1+" !");	
+					iniComputerCounter++;
+					valueReturned = EndLoop(iniHumanCounter, iniComputerCounter);
+
+				}
+				else if (numberIA==2 && input==3) {
+					System.out.println("la "+COUP2+" perd contre les "+COUP3+" !");
+					iniHumanCounter++;
+					valueReturned = EndLoop(iniHumanCounter, iniComputerCounter);
+
+				}
+				else if (numberIA==3 && input==1) {
+					System.out.println("les "+COUP3+" perdent contre la "+COUP1+" !");	
+					iniHumanCounter++;
+					valueReturned = EndLoop(iniHumanCounter, iniComputerCounter);
+
+				}
+				else if (numberIA==3 && input==2) {
+					System.out.println("les "+COUP3+" gagnent contre la "+COUP2+" !");
+					iniComputerCounter++;
+					valueReturned = EndLoop(iniHumanCounter, iniComputerCounter);
+				}
+				else
+					System.out.println("une erreur s'est produite");
+			}
+			// répétition jusqu'a ce que utilisateur ou systeme ait 3 ou 5 points
+			while (!valueReturned);
+			if (iniComputerCounter<iniHumanCounter) {
+				// affichage du nom du gagnant/perdant
+				System.out.println("\n vous avez gagné la partie !");
+			}
+			else if (iniComputerCounter>iniHumanCounter) {
+				System.out.println("\n vous avez perdu la partie !");
+			}
+			else
+				System.out.println("une erreur s'est produite");
+
+			System.out.println("\n voulez vous rejouer ? (true/false)");
+			retry = scanner.nextBoolean();
+			if (retry == true) {
+				System.out.println("bienvenue dans une nouvelle partie de Chifoumi !");
+			}
+			else if (retry == false){
+				scanner.close();
+				System.out.println("A bientôt pour une nouvelle partie !");
+				retry=false;}
+		}
+		while (retry);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

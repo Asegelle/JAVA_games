@@ -1,0 +1,76 @@
+package fr.ibformation.exos.bonus.bataille.navale.bo;
+
+public class Grid {
+
+	// déclaration des variables
+	public static final String 
+	ORD_1 = "1", 
+	ORD_2 = "2", 
+	ORD_3 = "3",
+	ORD_4 = "4", 
+	ORD_5 = "5", 
+	ORD_6 = "6",
+	ORD_7 = "7", 
+	ORD_8 = "8", 
+	ORD_9 = "9",
+	ORD_10 = "10";
+
+	public static final String
+	ABS_A = "A",
+	ABS_B = "B",
+	ABS_C = "C",
+	ABS_D = "D",
+	ABS_E = "E",
+	ABS_F = "F",
+	ABS_G = "G",
+	ABS_H = "H",
+	ABS_I = "I",
+	ABS_J = "J";
+
+	public static final String
+	BOAT = "O",
+	TOUCHED = "X",
+	FLOADED = "*",
+	PLAYER1 = "J1",
+	PLAYER2 = "J2";
+
+	public String[][] Grid;
+	public String [] abs;
+	public String [] ord;
+	
+/*	public String empty = " ";
+	public String[][] emptyGrid = new String[][]{ 
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty}
+	};
+*/
+	
+	// constructeurs
+	public Grid (String[][] Grid, String []ord, String[] abs) {
+		this.Grid=Grid;
+		this.abs=abs;
+		this.ord=ord;
+	}
+	
+	
+	
+	// méthodes de classe
+	public String graphGrid(
+			String [][]g) {
+		return
+		" Grille Joueur                                  |   Grille Ennemi                                  "+abs[0]+"   "+abs[1]+"   "+abs[2]+"   "+abs[3]+"   "+abs[4]+"   "+abs[5]+"   "+abs[6]+"   "+abs[7]+"   "+abs[8]+"   "+abs[9]+"      |       "+abs[0]+"   "+abs[1]+"   "+abs[2]+"   "+abs[3]+"   "+abs[4]+"   "+abs[5]+"   "+abs[6]+"   "+abs[7]+"   "+abs[8]+"   "+abs[9]+"       --- --- --- --- --- --- --- --- --- ---     |      --- --- --- --- --- --- --- --- --- ---  "
+		+ord[0]+" | "+g[0][0]+" | "+g[0][1]+" | "+g[0][2]+" | "+g[0][3]+" | "+g[0][4]+" | "+g[0][5]+" | "+g[0][6]+" | "+g[0][7]+" | "+g[0][8]+" | "+g[0][9]+" |    |   "+ORD_1+" | "+g[0][10]+" | "+g[0][11]+" | "+g[0][12]+" | "+g[0][13]+" | "+g[0][14]+" | "+g[0][15]+" | "+g[0][16]+" | "+g[0][17]+" | "+g[0][18]+" | "+g[0][19]+" | ";
+
+	}
+	
+	
+	
+}

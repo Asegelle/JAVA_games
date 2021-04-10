@@ -1,0 +1,19 @@
+1617377484295	Move compilation unit
+1617377507900	Move compilation unit
+1617377548850	Move compilation unit
+1617377571685	Move compilation unit
+1617377623115	Rename package 'fr.ibformation.exos.bonus.bataille.navale.launcher'
+1617377643776	Move compilation unit
+1617377679053	Move compilation unit
+1617377696403	Delete element
+1617451927595	Delete element
+1617457383344	Delete element
+1617540490600	Rename field 'y'
+1617540503384	Rename field 'x'
+1617540634374	Rename local variable 'rightAbscissa'
+1617540643389	Rename local variable 'rightOrdinate'
+1617540717231	Rename local variable 'rightEndOrdinate'
+1617547477079	Rename local variable 'lineFree'
+1617568538352	Rename local variable 'absIA'
+1617568548033	Rename local variable 'ordIA'
+1617568560091	Rename local variable 'ordIAEnd'

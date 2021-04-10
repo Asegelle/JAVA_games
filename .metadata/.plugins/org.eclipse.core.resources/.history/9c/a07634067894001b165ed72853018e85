@@ -1,0 +1,54 @@
+package fr.ibformation.exos.bonus.bataille.navale.bo;
+
+public class Grid {
+
+	// déclaration des variables
+	public static final String 
+	ORD_1 = "1", 
+	ORD_2 = "2", 
+	ORD_3 = "3",
+	ORD_4 = "4", 
+	ORD_5 = "5", 
+	ORD_6 = "6",
+	ORD_7 = "7", 
+	ORD_8 = "8", 
+	ORD_9 = "9",
+	ORD_10 = "10";
+
+	public static final String
+	ABS_A = "A",
+	ABS_B = "B",
+	ABS_C = "C",
+	ABS_D = "D",
+	ABS_E = "E",
+	ABS_F = "F",
+	ABS_G = "G",
+	ABS_H = "H",
+	ABS_I = "I",
+	ABS_J = "J";
+
+	public static final String
+	BOAT = "O",
+	TOUCHED = "X",
+	FLOADED = "*",
+	PLAYER1 = "J1",
+	PLAYER2 = "J2";
+
+	// constructeurs
+	public static String empty = " ";
+	public static String[][] emptyGrid = new String[][]{ 
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty},
+		{empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty,empty}
+
+
+
+
+}

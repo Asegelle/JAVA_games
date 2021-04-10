@@ -1,0 +1,14 @@
+package fr.ibformation.poo.todolist.bo;
+
+public class courses {
+
+	
+	// déclaration des variables
+	
+	private String name;
+	private int quantity;
+	
+	
+	
+	
+}

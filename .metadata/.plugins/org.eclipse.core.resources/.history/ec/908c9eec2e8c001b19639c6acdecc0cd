@@ -1,0 +1,43 @@
+package fr.ibformation.exo2;
+
+import java.util.Scanner;
+
+public class Launcher {
+
+	public static void main(String[] args) {
+				/* •Exercice 2 : Faire un algorithme permettant de déterminer si une personne peut être électeur
+					•Pour pouvoir être électeur en France, actuellement, un certain nombre de conditions doivent être réunies :
+							•Il faut être français
+							•Il faut être juridiquement majeur (18 ans)
+							•Il faut avoir la capacité juridique et civique
+							•Il faut être inscrit sur une liste électorale	*/
+		
+				// étape 1 : déclaration des variables
+		
+				// étape 2 : interroger l'utilisateur sur sa nationalité
+		System.out.println("êtes vous de nationalité Française ? (true / false) ");
+		Scanner inputValues = new Scanner(System.in);
+		boolean isFrench = inputValues.nextBoolean();
+				// étape 3 : intérroger l'utilisateur son age
+		System.out.println("quel est votre âge ? ");
+		int age = inputValues.nextInt();
+				// étape 4 : intérroger l'utilisateur sa capacité juridique et civique
+		System.out.println("avez vous la capacité juridique et civique ? (true / false) ");
+		boolean hasJuridicAndCivicCapacity = inputValues.nextBoolean();
+				// étape 5 : intérroger l'utilisateur son inscription sur liste electorale
+		System.out.println("êtes vous inscrit-e sur une liste électorale ? (true / false) ");
+		boolean isOnTheList = inputValues.nextBoolean();
+		inputValues.close();
+				// étape 6 : définir si l'utilisateur est éligible
+		if (isFrench == true && age >= 18 && hasJuridicAndCivicCapacity == true && isOnTheList == true)
+		{System.out.println("félicitation ! vous pouvez voter");
+				}
+		else 
+		{System.out.println("vous ne pouvez pas voter");
+		}
+				// étape finale : informer l'utilisateur de son éligibilité
+
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package fr.ibformation.poo.students;
+
+public class LauncherStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

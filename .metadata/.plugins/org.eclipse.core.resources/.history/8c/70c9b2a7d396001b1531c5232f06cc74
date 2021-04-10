@@ -1,0 +1,11 @@
+package fr.ibformation.poo.todolist.enums;
+
+public enum Menu {
+	
+	LIST,
+	ADD,
+	REMOVE,
+	SET,
+	QUITE
+		
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;fr.ibformation.exos.bonus.MorpionJcJ&apos; to &apos;LauncherMorpionJcJ&apos;&#x0D;&#x0A;- Original project: &apos;Bonus_Exos&apos;&#x0D;&#x0A;- Original element: &apos;fr.ibformation.exos.bonus.MorpionJcJ&apos;&#x0D;&#x0A;- Renamed element: &apos;fr.ibformation.exos.bonus.LauncherMorpionJcJ&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MorpionJcJ&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;fr.ibformation.exos.bonus{MorpionJcJ.java[MorpionJcJ" matchStrategy="1" name="LauncherMorpionJcJ" qualified="false" references="true" similarDeclarations="false" stamp="1616963712778" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,45 @@
+package fr.ibformation.exos.bonus.bataille.navale.bo;
+
+public class Boats {
+
+	
+	
+	// déclaration des variables
+	public static String [][] boatGrid = new String [10][10];
+	public static String Boat1place;
+	public static String Boat2place;
+	public static String Boat3place;
+	public static String Boat4place;
+	public static String Boat5place;
+
+	
+	// constucteurs
+	public Boats (String [][]boatGridParam) {
+	boatGrid = boatGridParam;
+}
+	public Boats (String Boat1placeParam) {
+		Boat1place = Boat1placeParam;
+	}
+	public Boats (String Boat2placeParam) {
+		Boat2place = Boat2placeParam;
+	}
+	public Boats (String Boat3placeParam) {
+		Boat3place = Boat3placeParam;
+	}
+	public Boats (String Boat1placeParam) {
+		Boat1place = Boat1placeParam;
+	}
+	public Boats (String Boat1placeParam) {
+		Boat1place = Boat1placeParam;
+	}
+	
+	
+	//méthodes
+	public String[][] gridBoat () {
+		return boatGrid;
+	}
+	
+	public String placeBoat () {
+		return boatPlace;
+	}
+}

@@ -1,0 +1,61 @@
+package fr.ibformation.todolist.Launcher;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LauncherTodolist {
+
+
+
+
+	public static Scanner scanner = new Scanner(System.in);
+	public static boolean isEnd = false;
+
+
+
+
+	public static void main(String[] args) {
+
+
+		do {	
+			System.out.println("Votre action : \n"
+					+ "1 Afficher la liste des éléments\n"
+					+ "2 Ajouter un élément\n"
+					+ "3 Supprimer un élément\n"
+					+ "4 Modifier un élément\n"
+					+ "5 Quitter le programme");
+			int input = scanner.nextInt();
+			System.out.println("vous venez de saisir : "+input);
+			if (input == 1) {
+
+
+			}
+			if (input == 2) {
+
+
+			}
+			if (input == 3) {
+
+
+			}
+			if (input == 4) {
+
+
+			}
+			if (input == 5) {
+				isEnd = true;
+System.out.println("merci d'avoir utilisé ce programme !");
+			}
+		}
+		while (isEnd = false);
+
+
+		//		List myList = new ArrayList();
+		//		myList.add(1) = "";
+
+
+
+	}
+
+}

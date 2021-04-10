@@ -1,0 +1,28 @@
+package fr.ibformation.javase.fichiers;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Launcher {
+
+	public static void main(String[] args) {
+		try (
+			FileInputStream fichier = new FileInputStream("files/dictionnaire.txt"); // This will be automaticaly closed when the try / catch is finished with this syntax
+			Scanner s = new Scanner(fichier); // This will be automaticaly closed when the try / catch is finished with this syntax
+		) {
+			int countWord = 0;
+			// If my scanner have a next line
+			while (s.hasNextLine()) {
+				countWord++;
+				s.nextLine(); // Go to the next line
+			}
+			System.out.println(countWord);
+		} catch (IOException e) {
+			System.out.println("[DemoFile] numberOfLineIntoFile : An error from count the number of words into file !");
+			System.out.println(e);
+		}
+
+	}
+
+}

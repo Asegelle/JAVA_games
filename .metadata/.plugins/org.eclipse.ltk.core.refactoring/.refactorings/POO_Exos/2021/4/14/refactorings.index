@@ -1,0 +1,29 @@
+1617694331168	Rename type 'ExoVilles'
+1617698771649	Rename type 'monument'
+1617708810122	Move compilation unit
+1617708839678	Move compilation unit
+1617709397335	Move compilation unit
+1617709477484	Rename compilation unit 'menu.java'
+1617709488366	Rename type 'courses'
+1617712023556	Move package
+1617712132943	Move compilation unit
+1617712136085	Move compilation unit
+1617712158004	Move compilation unit
+1617712167916	Move package
+1617712349612	Delete element
+1617712360517	Delete element
+1617712364537	Delete element
+1617726461796	Rename type 'Villes'
+1617726470388	Rename type 'Monuments'
+1617728325825	Encapsulate field 'category'
+1617728419530	Encapsulate field 'NBR_CITIZEN_FIRST_CATEGORY'
+1617728426040	Encapsulate field 'NBR_CITIZEN_SECOND_CATEGORY'
+1617728432357	Encapsulate field 'NBR_CITIZEN_THIRD_CATEGORY'
+1617730464355	Encapsulate field 'isSameName'
+1617730810573	Encapsulate field 'monument'
+1617730822206	Delete element
+1617730881522	Encapsulate field 'name'
+1617730890191	Encapsulate field 'buildYear'
+1617736648177	Move compilation unit
+1617736902237	Rename type 'student'
+1617738462647	Rename local variable 'élèves'

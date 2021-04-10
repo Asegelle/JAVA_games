@@ -1,0 +1,10 @@
+package fr.ibformation.exos.java.se;
+
+public class LauncherExoBadMaximot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

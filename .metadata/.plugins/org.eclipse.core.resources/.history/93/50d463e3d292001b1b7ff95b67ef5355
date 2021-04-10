@@ -1,0 +1,96 @@
+package fr.ibformation.exos.bonus;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class LauncherNombreMystere {
+
+	public static void main(String[] args) {
+		/* •Jeu du nombre mystère :
+							Le système choisit un nombre aléatoire entre 1 et 100 (il est possible de le fixer
+							dans un premier temps). Le joueur doit trouver le nombre mystère en 7 coups
+							maximum ! A chaque tentative, le système indique si le nombre mystère est plus
+							grand ou plus petit. A la fin du jeu, le système indique le nombre de coup en cas de
+							victoire, ou un message de défaite le cas échéant		*/
+		// étape 1 : déclaration des booléennes pour relancer ou non le game
+		boolean retry=true;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Bienvenue dans le jeu du nombre mystère ! \n\n Un nombre va être choisi aléatoirement entre 0 et 100 et vous allez avoir 7 coups maximum pour le trouver. \n A chaque tentative, il vous sera indiqué si le nombre mystère est plus grand ou plus petit. \n A la fin du jeu, le système indiquera le nombre de coups en cas de victoire, ou un message de défaite le cas échéant. \n Bonne chance à vous !\n");
+		do {
+			// étape 2 : déclaration des variables
+			int inputNumber;
+			int iteration;
+			boolean isNumberFound = false;
+			int maxInterval = 100;
+			// étape 3 : attribution des valeurs aux variables (random)
+			//	int mysteryNumber = (int)(Math.random()*100);
+			int mysteryNumber = generateMysteryNumber(maxInterval);
+			//int mysteryNumber = 57;	//code quand valeur fixe
+
+			// étape 3 : boucle FOR de 7 répétitions tant que pas trouvé le nombre
+			for (iteration=0; iteration<7; iteration++) {
+				// étape 4 : saisie de l'imput par l'utilisateur
+				System.out.println("saisissez un nombre entre 0 et 100 : ");
+				inputNumber = scanner.nextInt();
+				System.out.println("vous venez de saisir le nombre : "+inputNumber);
+				// étape 5 : IF pour nombre pas trouvé, erreur
+				if (inputNumber <0 || inputNumber>100) {
+					System.out.println("erreur de saisie (le nombre doit être compris entre 0 et 100)");	
+					iteration--;
+				}
+				// étape 6 : IF pour nombre pas trouvé, plus petit ou plus grand
+				else if (inputNumber <mysteryNumber) {
+					System.out.println("le nombre mystère est plus grand");		
+				}
+				else if (inputNumber >mysteryNumber) {
+					System.out.println("le nombre mystère est plus petit");		
+				}
+				// étape 7 : IF pour nombre trouvé
+				else if (inputNumber ==mysteryNumber) {
+					System.out.println("vous avez trouvé le nombre mystère en "+(iteration++)+ " coup(s)!");
+					break;
+				}
+				// étape 8 : prise en compte d'une erreur
+				else  {
+					System.out.println("une erreur s'est produite");
+					iteration--;
+				}
+			}
+			// étape 10 : relancer le jeu ou non après 7 erreurs
+			if (isNumberFound==false) {
+				System.out.println("vous n'avez pas trouvé le nombre mystère après 7 tentatives, vous aurez plus de chances la prochaine fois !");
+			}
+			System.out.println("voulez vous rejouer ? (true/false)");
+			retry = scanner.nextBoolean();
+			if (retry == true) {
+				System.out.println("bienvenue dans une nouvelle partie du nombre mystère !\n");
+			}
+			else {
+				System.out.println("A bientôt pour une nouvelle partie !");
+				scanner.close();
+			}
+		}
+		while (retry);
+	}
+
+
+
+	//---------------------------------------------------------------------------------------------------------
+	// --------------------- fonction random ------------------------------------------------------------------
+	//---------------------------------------------------------------------------------------------------------	
+
+	public static int generateMysteryNumber (int max) {
+		Random r = new Random();
+		int mysteryNumber = r.nextInt((max-0)+1)+0;
+		System.out.println(mysteryNumber);
+		return mysteryNumber;
+	}
+
+	//---------------------------------------------------------------------------------------------------------	
+
+
+
+}
+
+
+

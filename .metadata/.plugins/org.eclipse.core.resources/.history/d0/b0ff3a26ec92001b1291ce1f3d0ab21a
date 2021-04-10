@@ -1,0 +1,10 @@
+package fr.ibformation.exceptions.debug.exos;
+
+public class LauncherExo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package fr.ibformation.todolist;
+
+public enum Enum {
+
+}

@@ -1,0 +1,39 @@
+package fr.ibformation.todolist.Launcher;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LauncherTodolist {
+	
+	
+	
+	
+	Scanner scanner = new Scanner(System.in);
+
+	
+	
+	
+	public static void main(String[] args) {
+
+	
+	
+		
+		System.out.println("Votre action : "
+				+ "1 Afficher la liste des éléments\r\n"
+				+ "2 Ajouter un élément\r\n"
+				+ "3 Supprimer un élément\r\n"
+				+ "4 Modifier un élément\r\n"
+				+ "5 Quitter le programme");
+		
+		
+		
+		
+//		List myList = new ArrayList();
+//		myList.add(1) = "";
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,92 @@
+package fr.ibformation.poo.students.launcher;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import fr.ibformation.poo.students.bo.Student;
+
+public class LauncherStudent {
+
+	public static void main(String[] args) {
+
+
+		/*
+		L'idée est de réaliser la gestion d'une liste d'élèves dans une classe
+		Créer une liste d'élèves avec nom, classe (CP, CE1, etc...), âge
+		- Créer 5 élèves :
+			Yoann, CP, 6 ans
+			Emma, CP, 6 ans
+			Erwann, CE1, 7 ans
+			Bastien, CP, 8 ans
+			Alienor, CE1, 8 ans
+
+		- Afficher la liste des élèves
+		- Ajouter une nouvelle élève Alicia, CE2, 8 ans
+		- Supprimer l’élève Erwann
+		- Modifier Bastien qui est en CM1 en réalité
+		- Afficher la liste des élèves
+
+		Indice : 
+		- Partir sur une ArrayList
+		- Une ArrayList peut avoir comme type un Business Object
+
+		 */		
+
+		// creation d'un tableau d'élèves
+		List<Student> eleves = new ArrayList<Student> ();
+		eleves.add(new Student ("Yoann", 6, "CP"));
+		eleves.add(new Student ("Emma", 6, "CP"));
+		eleves.add(new Student ("Erwann", 7, "CE1"));
+		eleves.add(new Student ("Bastien", 8, "CP"));
+		eleves.add(new Student ("Alienor", 8, "CE1"));
+
+		// fonction affichage de la liste
+		displayProducts(eleves);		
+
+		// ajouter un nouvel élève
+		eleves.add(new Student ("Alicia", 8, "CE2"));
+
+		// supprimer un élève
+		for (int i=0; i < eleves.size(); i++) {
+			if (eleves.get(i).getName() == "Erwann") {
+				eleves.remove(i);
+			}
+		}
+
+		// modifier un élève
+		for (int i=0; i < eleves.size(); i++) {
+			if (eleves.get(i).getName() == "Bastien") {
+				eleves.get(i).setSchool("CM2"); 
+			}
+		}
+
+		// afficher la liste
+		displayProducts(eleves);		
+
+
+	}
+
+
+
+	// --------------------------------------------------------------------------------------------------------------
+	// --------------------------------------- Fonctions affichage liste de courses ---------------------------------
+	// --------------------------------------------------------------------------------------------------------------
+
+
+	public static void displayProducts(List<Student> students) {
+		for(Student élèves : students) {
+			System.out.println(élèves);
+		}
+		System.out.println("");
+	}
+
+
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------------------------
+
+}

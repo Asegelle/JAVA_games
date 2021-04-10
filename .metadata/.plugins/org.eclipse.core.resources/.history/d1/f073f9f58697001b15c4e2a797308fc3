@@ -1,0 +1,151 @@
+package fr.ibformation.todolist.Launcher;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import fr.ibformation.todolist.bo.Course;
+
+
+public class LauncherTodolist {
+
+
+	// ------------------------------ variables globales -----------------------------------------------------------
+
+	public static Scanner scanner = new Scanner(System.in);
+	public static boolean isEnd = false;
+
+	public static final String SHOW = "Afficher la liste des éléments";
+	public static final String ADD = "Ajouter un élément";
+	public static final String DELETE = "Supprimer un élément";
+	public static final String SET = "Modifier un élément";
+	public static final String LEAVE = "Quitter le programme";
+
+
+
+
+	// ------------------------------ main ---------------------------------------------------------------------
+
+	public static void main(String[] args) {
+
+
+		List<Course> shoppingList = new ArrayList<Course>();
+//		Course course1 = new Course(0,"banane", 2);
+//		Course course2 = new Course(1, "sirop d'erable", 36);
+//		shoppingList.add(course1);
+//		shoppingList.add(course2);
+		int index = 0;
+
+		do {	
+			displayMenu();
+			int inputMenu = scanner.nextInt();
+			Course course = new Course();
+			System.out.println("vous venez de saisir : "+inputMenu+"\n");
+			switch (inputMenu) {
+			case 1 :
+				System.out.println("vous souhaitez : "+SHOW+"\n");
+				displayProducts(shoppingList);
+
+				
+
+				break;
+			case 2 :
+				System.out.println("vous souhaitez : "+ADD+"\n");
+//				Course course = new Course();
+
+				System.out.println("produit que vous souhaitez ajouter : ");
+				course.setName(scanner.next());
+				System.out.println("quantité de ce produit : ");
+				course.setQuantity(scanner.nextInt());
+				index += 1;
+				course.setId(index);
+				shoppingList.add(course);
+				displayProducts(shoppingList);
+
+				
+
+				break;
+			case 3 :
+				System.out.println("vous souhaitez : "+DELETE+"\n");
+				System.out.println("produit que vous souhaitez supprimer : ");
+				course.setName(scanner.next());
+
+
+				for (int i=0; i < shoppingList.size(); i++) {
+					if (shoppingList.get(i).getName().equalsIgnoreCase(course.getName())) {
+						shoppingList.remove(i);
+						break;
+					}
+				}
+				displayProducts(shoppingList);
+
+
+				break;
+			case 4 :
+				System.out.println("vous souhaitez : "+SET+"\n");
+
+
+
+
+				break;
+			case 5 :
+				isEnd = true;
+				System.out.println("vous avez choisi : "+LEAVE+"\n");
+				System.out.println("A bientot !");
+
+
+
+
+				break;
+			default :
+				System.out.println("vous avez fait une erreur de saisie !\n");
+				break;
+			}
+		}
+		while (!isEnd);
+
+
+		//		List myList = new ArrayList();
+		//		myList.add(1) = "";
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+	// --------------------------------------------------------------------------------------------------------------
+	// --------------------------------------- Fonctions affichage liste de courses ---------------------------------
+	// --------------------------------------------------------------------------------------------------------------
+
+
+	public static void displayProducts(List<Course> products) {
+		for(Course element : products) {
+			System.out.println(element);
+		}
+	}
+
+	// --------------------------------------------------------------------------------------------------------------
+	// --------------------------------------- Fonctions affichage liste de courses ---------------------------------
+	// --------------------------------------------------------------------------------------------------------------
+
+	public static void displayMenu () {
+		System.out.println("\nVotre action : \n"
+				+ "1 - "+SHOW+"\n"
+				+ "2 - "+ADD+"\n"
+				+ "3 - "+DELETE+"\n"
+				+ "4 - "+SET+"\n"
+				+ "5 - "+LEAVE+"\n");
+	}
+
+	// --------------------------------------------------------------------------------------------------------------
+
+}

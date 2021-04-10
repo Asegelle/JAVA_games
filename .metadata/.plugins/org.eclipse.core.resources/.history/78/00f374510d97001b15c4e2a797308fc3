@@ -1,0 +1,53 @@
+package fr.ibformation.poo.students.bo;
+
+public class student {
+
+	
+	// déclaration des variables
+	private static String name;
+	private static int age;
+	private static String school;
+
+	
+	
+	
+	// constructeurs
+	public 
+	
+	
+	
+	
+	
+	
+	// méthodes
+	
+	
+	
+	
+	
+	
+	
+	// ------------------------------------ getters / setters --------------------------------------------------
+	
+	public static String getName() {
+		return name;
+	}
+	public static void setName(String name) {
+		student.name = name;
+	}
+	public static int getAge() {
+		return age;
+	}
+	public static void setAge(int age) {
+		student.age = age;
+	}
+	public static String getSchool() {
+		return school;
+	}
+	public static void setSchool(String school) {
+		student.school = school;
+	}
+	
+	
+	
+}

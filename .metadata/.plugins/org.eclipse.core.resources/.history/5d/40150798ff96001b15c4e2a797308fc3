@@ -1,0 +1,39 @@
+package fr.ibformation.poo.villes.exos.bo;
+
+public class Monument {
+
+	// déclaration des variables
+	private String monumentName;
+	private String monumentDate;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// -------------------- getters / setters -------------------------------
+	
+	public String getMonumentName() {
+		return monumentName;
+	}
+	public void setMonumentName(String monumentName) {
+		this.monumentName = monumentName;
+	}
+	public String getMonumentDate() {
+		return monumentDate;
+	}
+	public void setMonumentDate(String monumentDate) {
+		this.monumentDate = monumentDate;
+	}
+	
+	
+	
+	
+	
+	
+}
